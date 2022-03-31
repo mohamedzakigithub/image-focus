@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.focus-picker-container {
+  width: 300px;
+}
+
+.spacer {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.grid-container {
+  width: 100%;
+  display: block;
+  flex: 1;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  grid-template-rows: 6fr 3fr 2fr;
+  grid-gap: 5px;
+  height: 100%;
+}
+
+.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.top-center {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.top-right {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.center-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.center-center {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.center-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.bottom-left {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.bottom-center {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.bottom-right {
+  grid-column: 3;
+  grid-row: 3;
+}
