@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/image-focus/static/css/main.a031bbda.chunk.css",
+    "main.js": "/image-focus/static/js/main.ef324384.chunk.js",
+    "main.js.map": "/image-focus/static/js/main.ef324384.chunk.js.map",
+    "runtime~main.js": "/image-focus/static/js/runtime~main.93e6f085.js",
+    "runtime~main.js.map": "/image-focus/static/js/runtime~main.93e6f085.js.map",
+    "static/js/2.3030629f.chunk.js": "/image-focus/static/js/2.3030629f.chunk.js",
+    "static/js/2.3030629f.chunk.js.map": "/image-focus/static/js/2.3030629f.chunk.js.map",
+    "index.html": "/image-focus/index.html",
+    "precache-manifest.3c70de7470a2ffcdddb12f231ce0e062.js": "/image-focus/precache-manifest.3c70de7470a2ffcdddb12f231ce0e062.js",
+    "service-worker.js": "/image-focus/service-worker.js",
+    "static/css/main.a031bbda.chunk.css.map": "/image-focus/static/css/main.a031bbda.chunk.css.map"
+  }
+}
