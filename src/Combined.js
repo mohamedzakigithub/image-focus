@@ -150,6 +150,7 @@ const handleImage = async () => {
   return (
    <div className="app">
       <h1>Combined Focal Point Detection Algorithm</h1>
+      <h2>{image ? faceDetected ? "Face/s Detected" : "No Face/s Detected": null}</h2>
       <input
         type="file"
         onChange={e => {

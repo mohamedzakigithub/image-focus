@@ -38,7 +38,12 @@ console.log("focus");
 console.log(focus);
 
   if (faceDetected) {
-    setFocusCoordinates({ x: focus.x, y: focus.y })
+console.log(originalHeight)
+    const calcX = 1- Math.abs(focus.x-originalWidth)/(originalWidth/2)
+    const calcY = Math.abs(focus.y-originalHeight)/(originalHeight/2) - 1
+    console.log(calcX);
+    console.log(calcY);
+    setFocusCoordinates({ x: calcX, y: calcY })
     console.log("with Face detection");
   }else {
     setFocusCoordinates({ x: focusX, y: focusY })
