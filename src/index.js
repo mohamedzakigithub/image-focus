@@ -5,8 +5,7 @@ import FocusedImage from "./focused-image";
 import FocusPicker from "./focus-picker";
 import FaceDetection from "./faceDetection";
 import Combined from "./Combined"
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
+import {Button, Container} from '@mui/material';
 
 
 const App = () => {
