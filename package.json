@@ -5,6 +5,10 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.3",
+    "face-api.js": "^0.22.2",
     "image-focus": "1.0.3",
     "lodash.debounce": "4.0.8",
     "react": "16.8.6",

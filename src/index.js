@@ -3,13 +3,33 @@ import ReactDOM from "react-dom";
 import "./styles.css";
 import FocusedImage from "./focused-image";
 import FocusPicker from "./focus-picker";
+import FaceDetection from "./faceDetection";
+import Combined from "./Combined"
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+
 
 const App = () => {
   const startingFocus = { x: 0, y: 0 };
   const [image, setImage] = React.useState(null);
   const [focus, setFocus] = useState(startingFocus);
+  const [algo, setAlgo] = useState(false)
 
-console.log(image);
+const SelectAlgorithm = () => {
+      return (
+        <Container sx={{ height:"100vh", display:"flex", alignItems:"center", justifyContent:"space-around"}}>
+            <Button variant="contained" size="large" onClick={()=>setAlgo("standard")}>
+              Standard Focus Detection Algorithm
+            </Button>
+            <Button variant="contained" size="large" onClick={()=>setAlgo("face")}>
+              Facial Recognition Focus Detection
+            </Button>
+            <Button variant="contained" size="large" onClick={()=>setAlgo("combined")}>
+              Combined Algorithm
+            </Button>
+        </Container>
+      )
+    }
 
   const fileHandler = files => {
     let reader = new FileReader();
@@ -21,7 +41,16 @@ console.log(image);
     reader.readAsDataURL(files[0]);
   };
   return (
-    <div className="app">
+<>
+
+{!algo && <SelectAlgorithm />}
+
+{algo == "face" && <FaceDetection />}
+
+{algo === "combined" && <Combined />}
+
+
+    {algo === "standard" && <div className="app">
       <h1>Focused Image Picker</h1>
       <input
         type="file"
@@ -86,7 +115,8 @@ console.log(image);
           </div>
         </div>
       </div>}
-    </div>
+    </div>}
+    </>
   );
 };
 
