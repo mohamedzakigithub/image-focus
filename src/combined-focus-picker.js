@@ -7,6 +7,7 @@ import smartcrop from "smartcrop";
 const startingFocus = { x: -2, y: -2 };
 
 const FocusPickerComponent = ({
+  debounceTime = 300,
   imageSrc,
   onFocusChanged,
   focus,
@@ -55,9 +56,9 @@ console.log(originalHeight)
 
   useEffect(() => {
     if (imageRef.current !== null) {
-      // const debouncedOnFocusChanged = debounce(onFocusChanged, debounceTime);
+       const debouncedOnFocusChanged = debounce(onFocusChanged, debounceTime);
       new FocusPicker(imageRef.current, {
-        onChange: onFocusChanged,
+        onChange: debouncedOnFocusChanged,
         focus: focusCoordinates
       });
     }
